@@ -1,0 +1,39 @@
+<!doctype html><html><head>
+<!--
+Authors:
+  Will Covington willocov@csu.fullerton.edu
+  Caesar Mier
+
+Description:
+  This is the file that generates the webpage that displays the Cella Ant Algorithm.
+  Contains the title, headers, and canvas.
+  Begins the algorithm .
+-->
+<title>CellaAnt #12 CPSC 335-05 Project 1</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body><h1>Cella Ant 12 Project</h1>
+<h4>Will Covington and Caesar Mier</h4>
+<h4>335-05</h4>
+
+<canvas id="grid" width="738" height="738"></canvas>
+
+</body>
+<script src="../assets/draw-stuff.js"></script>
+
+<script>
+// -----------Main--------------
+
+  var canvas = document.getElementById( "grid" );
+  var context = canvas.getContext( "2d" );
+  var begState = 0;
+  var begDirection = 3; // triangle starts west
+  var centerPoint = 369;
+  var colors = ['black', 'red', 'yellow', 'blue'];
+  var moves = 1000;
+  draw_grid( context, 41, 41, 'white');
+  draw_wTriangle(context, centerPoint, centerPoint);
+  changeDirection(context, begState, begDirection, centerPoint, centerPoint, colors, moves);
+  
+</script>
+</html>

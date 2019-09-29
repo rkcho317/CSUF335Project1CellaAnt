@@ -1,0 +1,15 @@
+/*
+	Authors:
+		William Covington willocov@csu.fullerton.edu
+		Casaer Mier
+	Description:
+		Specifies properties for the webpage.		
+*/
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: white;
+ }
+canvas {
+  background-color: black;
+}
